@@ -1,4 +1,4 @@
-package com.szca.sm2;
+package cms;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -55,11 +55,6 @@ import org.bouncycastle.util.encoders.Base64;
 
 import sun.security.pkcs.ParsingException;
 
-import com.szca.caau.webservice.util.FileUtil;
-import com.szca.jcajce.provider.sm2.SM2ParameterSpec;
-import com.szca.sm2.cms.CMSUtil;
-import com.szca.sm2.cms.ExternalSignatureCMSSignedDataGenerator;
-import com.szca.sm2.cms.ExternalSignatureSignerInfoGenerator;
 
 public class SM2SignUtil
 {

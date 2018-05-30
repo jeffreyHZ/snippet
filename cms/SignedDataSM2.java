@@ -1,4 +1,4 @@
-package com.jeffrey.sm2.cms;
+package cms;
 
 
 import java.math.BigInteger;

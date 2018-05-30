@@ -337,6 +337,9 @@ public class ExternalSignatureCMSSignedDataGenerator {
 				throw new CMSException("encoding error.", e);
 			} catch (CertificateEncodingException e) {
 				throw new CMSException("error creating sid.", e);
+			} catch (Exception e)
+			{
+			    e.printStackTrace();
 			}
 		}
 
@@ -389,8 +392,7 @@ public class ExternalSignatureCMSSignedDataGenerator {
 		SignedDataSM2 sd = new SignedDataSM2(new DERSet(digestAlgs), encInfo,
 				certificates, certrevlist, new DERSet(signerInfos));
 
-		ContentInfo contentInfo = new ContentInfo(
-		    CMSObjectIdentifiersSM2.signedData, sd);
+		ContentInfo contentInfo = new ContentInfo(CMSObjectIdentifiersSM2.signedData, sd);
 
 		return new CMSSignedData(content, contentInfo);
 	}

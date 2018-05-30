@@ -1,4 +1,4 @@
-package com.szca.sm2;
+package cms;
 
 public class SM2EngineUtil
 {

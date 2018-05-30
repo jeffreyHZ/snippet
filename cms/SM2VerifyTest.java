@@ -1,4 +1,4 @@
-package com.szca.sm2;
+package cms;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
